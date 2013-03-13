@@ -3,7 +3,7 @@
 \usetheme{AnnArbor}
 \usecolortheme{beaver}
 \usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
+\usepackage[english,russian]{babel}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{epstopdf}
@@ -12,12 +12,36 @@
 \usepackage{algorithm}
 \usepackage[T2A]{fontenc}
 
+\title[Strategy-profness versus...]{Strategy-proofness versus Efficiency in Matching with Indifferences: Redesigning the NYC High School Match}
+\author[БЕЗЕР]{Бажанов К.Н., Егурнов А.А., Зрянина М.С., Егурнов Д.А., Рыжакова Е.В.}
+\institute[НИУ ВШЭ]{Национальный Исследовательский Университет Высшая Школа Экономики}
+\date{14 Марта 2013}
 
 \begin{document}
 
 \begin{frame}
-    \frametitle{Hello!}
-    Hello!
+    \titlepage
 \end{frame}
+
+\begin{frame}
+    \frametitle{Содержание}
+    \tableofcontents
+\end{frame}
+
+\AtBeginSection[]
+{
+    \begin{frame}
+        \frametitl{Содержание}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\AtBeginSubsection[]
+{
+    \begin{frame}
+        \frametitle{Содержание}
+        \tableofcontents[currentsection, currentsubsection]
+    \end{frame}
+}
 
 \end{document}
