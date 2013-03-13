@@ -112,17 +112,17 @@
 
 \begin{frame}
     \frametitle{Модель}
-    \begin{definition}
+    \begin{block}{Определение}
         $\phi: (P_I, R_S) \longmapsto \mu$ -- {\bf прямой механизм} 
-    \end{definition}
+    \end{block}
 
-    \begin{definition}
-        Механизм $\phi$ {\bf dominant strategy incentive compatible (DSIG)} для школьника $i$ если $\forall (R_I, R_S), \forall P_i^\prime: \phi_i(P_I; R_S) R_i \phi(P_i^\prime, P_{-i}; R_S)$
-    \end{definition}
+    \begin{block}{Определение}
+        Механизм $\phi$ {\bf dominant strategy incentive compatible (DSIC)} для школьника $i$ если $\forall (R_I, R_S), \forall P_i^\prime: \phi_i(P_I; R_S) R_i \phi(P_i^\prime, P_{-i}; R_S)$
+    \end{block}
 
-    \begin{definition}
-        Механизм называется {\bf неманипулируемым (strategy proof)} если DSIG выполняется для всех участников.
-    \end{definition}
+    \begin{block}{Определение}
+        Механизм называется {\bf неманипулируемым (strategy proof)} если DSIC выполняется для всех абитуриентов.
+    \end{block}
 \end{frame}
 
 \begin{frame}
@@ -150,6 +150,21 @@
             \includegraphics[height = 55mm]{figures/table-tiebreaking.png}
         }
     \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Замечания}
+    \begin{block}{Утверждение 1}
+        Если паросочетание $\mu$ является оптимальным для абитуриента, тогда не существует индивидуально-рациональное паросочетание $\nu$ (может быть и не стабильным) такое, что $\forall i \in I: \nu(i) P_i \mu(i)$.
+    \end{block}
+
+    \begin{block}{Утверждение 2}
+        Для любого профиля предпочтений $(P_I, R_S)$ любое паросочетание, которое может быть получено с помощью MTB, но не STB не является оптимальным для абитуриента стабильным паросочетанием.
+    \end{block}
+
+    \begin{block}{Теорема}
+        Не существует механизма, который был бы strategy-proof и доминировал бы DA с STB или MTB.
+    \end{block}
 \end{frame}
 
 \end{document}
