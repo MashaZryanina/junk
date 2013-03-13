@@ -102,12 +102,27 @@
     \frametitle{Модель}
     \begin{itemize}
         \item Паросочетание $\mu$ {\bf индивидуально рационально} если каждому агенту сопоставляется допустимый агент
-        \item Пара $(i, s)$ {\bf блокирующая} если $s P_i \mu(i)$ и либо $|\mu(s)| < q_s$ и  $i R_s s$
+        \item Пара $(i, s)$ {\bf блокирующая} если $s P_i \mu(i)$ и либо $|\mu(s)| < q_s$ и $i R_s s$, либо  $\exists i^\prime \in I: i R_s i^\prime$
         \item Паросочетание {\bf доминирует} $\nu$ если $\forall i \in I: \mu(i) R_i \nu(i)$ и $\exists i \in I: \mu(i) P_i \nu(i)$
         \item $\mu$ {\bf стабильно} если оно {\bf индивидуально рационально} и не имеет {\bf блокирующих пар}
         \item $\mu$ {\bf оптимально для абитуриента} если оно не доминируется никаким другим стабильным паросочетанием
         \item $\mu$ {\bf эффективно} если оно не доминируется никаким другим паросочетанием
     \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Модель}
+    \begin{definition}
+        $\phi: (P_I, R_S) \longmapsto \mu$ -- {\bf прямой механизм} 
+    \end{definition}
+
+    \begin{definition}
+        Механизм $\phi$ {\bf dominant strategy incentive compatible (DSIG)} для школьника $i$ если $\forall (R_I, R_S), \forall P_i^\prime: \phi_i(P_I; R_S) R_i \phi(P_i^\prime, P_{-i}; R_S)$
+    \end{definition}
+
+    \begin{definition}
+        Механизм называется {\bf неманипулируемым (strategy proof)} если DSIG выполняется для всех участников.
+    \end{definition}
 \end{frame}
 
 \end{document}
